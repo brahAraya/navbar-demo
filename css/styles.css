@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI';
+}
+
+section {
+    height: 100vh;
+}
+
+hr {
+    color: #3b3b3b;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.hidden {
+    bottom: -100px !important;
+}
+
+.up-btn {
+    text-decoration: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: all .6s ease;
+}
+
+.up-btn div {
+    color: #fff;
+    background-color: #000000aa;
+    height: 60px;
+    width: 60px;
+    border-radius: 999px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.up-btn div:hover {
+    transform: scale(1.2);
+}
+
+.home {
+    background: rgb(38, 16, 61);
+    background: linear-gradient(23deg, #26103d 0%, #590979 35%, #ff39bc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.brand {
+    color: #fff;
+    text-align: center;
+}
+
+.brand h1 {
+    font-size: 8em;
+}
+
+.menu-brand {
+    position: absolute;
+    left: 40px;
+    font-size: 1.5em;
+    transition: .3s ease;
+}
+
+.menu-brand a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand-hidden {
+    left: -130px;
+}
+
+.navbar {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    transition: all .7s ease;
+}
+
+.nav-top {
+    height: 90px;
+    top: 0;
+    position: fixed;
+    background-color: #000000aa;
+}
+
+.navbar ul {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4em;
+    transition: all .7s ease;
+    font-weight: bold;
+}
+
+.dummy {
+    flex: 0;
+    transition: flex .7s;
+}
+
+.expanded-dummy {
+    flex: auto;
+}
+
+.nav-top ul {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    display: inline-block;
+}
+
+.nav-item::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    transition: 300ms;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-top .nav-item::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+.nav-top .nav-item:hover::after {
+    width: 0px;
+}
+
+.nav-top .nav-item:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.nav-top .nav-item {
+    padding: 10px 15px;
+    border-radius: 3px;
+}
