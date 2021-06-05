@@ -54,7 +54,7 @@ hr {
 
 .home {
     background: rgb(38, 16, 61);
-    background: linear-gradient(23deg, #26103d 0%, #590979 35%, #ff39bc 100%);
+    background: linear-gradient(23deg, #26103d 0%, #7500a3 35%, #ff39bc 100%);
     display: flex;
     justify-content: center;
     align-items: center;
